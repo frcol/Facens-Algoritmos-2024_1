@@ -16,7 +16,9 @@ public class Tarefa4 {
             System.out.println("Digite um numero: ");
             numeros[i] = scan.nextInt();
             soma += numeros[i];
+            // soma = soma + numeros[i]
             multiplicacao *= numeros[i];
+            // multiplicacao = multiplicacao * numeros[i];
         }
         
         for (int i = 0; i < numeros.length; i++) {
