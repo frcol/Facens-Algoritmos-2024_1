@@ -11,9 +11,9 @@ public class Exemplo3 {
         };
         
         int[][] matriz2 = {
-            {9, 8, 7},
-            {6, 5, 4},
-            {3, 2, 1}
+            {10, 20, 30},
+            {40, 50, 60},
+            {70, 80, 90}
         };
         
         int[][] matrizSoma = new int[3][3];

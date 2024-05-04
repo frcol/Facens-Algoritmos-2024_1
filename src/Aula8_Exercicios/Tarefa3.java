@@ -15,9 +15,7 @@ public class Tarefa3 {
         for (int i = 0; i < notas.length; i++) {
             System.out.println("Digite uma nota: ");
             notas[i] = scan.nextInt();
-        }
-        
-        for (int i = 0; i < notas.length; i++) {
+            
             System.out.println(notas[i]);
             total += notas[i];
         }
