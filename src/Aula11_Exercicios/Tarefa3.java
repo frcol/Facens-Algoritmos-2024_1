@@ -11,7 +11,7 @@ public class Tarefa3 {
     public static void main(String[] args) {
         Random random = new Random();
         int[][] matriz = new int[5][3];
-        int maxNum = 0;
+        int maxNum = Integer.MIN_VALUE;
         
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {

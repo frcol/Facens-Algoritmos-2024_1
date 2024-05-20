@@ -12,9 +12,9 @@ public class Tarefa5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
-        int soma = 0;
+        double soma = 0;
         
-        int[][] matriz = new int[3][4];
+        double[][] matriz = new double[3][4];
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
@@ -25,7 +25,7 @@ public class Tarefa5 {
         System.out.println();
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
+                System.out.printf("%.0f ", matriz[i][j]);
             }
             System.out.println();
         }
@@ -37,6 +37,6 @@ public class Tarefa5 {
             soma += matriz[opt][j];
         }
         
-        System.out.println("Soma: "+soma);
+        System.out.println("Média: "+soma/4);
     }
 }
