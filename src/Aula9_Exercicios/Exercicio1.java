@@ -1,4 +1,4 @@
-package Aula7_Exercicios;
+package Aula9_Exercicios;
 
 import java.util.Scanner;
 

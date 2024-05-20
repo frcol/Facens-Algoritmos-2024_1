@@ -17,7 +17,12 @@ public class Tarefa8 {
         
         for (int i=0; i < linhas; i++) {
             for (int j=0; j <= i;j++) {
-                space = String.valueOf(valor).length() > 1?" ":"  ";
+                //space = String.valueOf(valor).length() > 1?" ":"  ";
+                if (String.valueOf(valor).length() > 1) {
+                    space = " ";
+                } else {
+                    space = "  ";
+                }
                 //space = (valor+"").length() > 1?" ":"  ";
                 System.out.print(valor + space);//
                 valor++;
