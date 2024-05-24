@@ -2,7 +2,7 @@ package Aula12_AC2;
 
 import java.util.Scanner;
 
-public class Demo1 {
+public class AC2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in, "UTF-8");
         
