@@ -30,17 +30,17 @@ public class Tarefa6 {
         }
         
         // Imprimindo a matriz
+        imprimirMatriz(matriz);
+        
+        System.out.println();
+        imprimirMatriz(matriz2);
+        
+    }
+    
+    public static void imprimirMatriz(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 System.out.print(matriz[i][j] + " ");
-            }
-            System.out.println();
-        }
-        
-        System.out.println();
-        for (int i = 0; i < matriz2.length; i++) {
-            for (int j = 0; j < matriz2[i].length; j++) {
-                System.out.print(matriz2[i][j] + " ");
             }
             System.out.println();
         }

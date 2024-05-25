@@ -3,20 +3,22 @@ package Aula12_AC2;
 import java.util.Scanner;
 
 public class AC2 {
+    static Scanner scan = new Scanner(System.in, "UTF-8");
+        
+    static     String[] nomeProdutos = new String[100];
+    static     int[] idProdutos = new int[100];
+    static     double[] precoProdutos = new double[100];
+        
+    static     int[] idCarrinho = new int[100]; 
+    static     int[] qtdeCarrinho = new int[100];
+        
+    static     int opcaoMenu = 0;
+    static     String opcao = "";
+        
+    static     int indice = 0, indiceCarrinho = 0;
+        
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in, "UTF-8");
         
-        String[] nomeProdutos = new String[100];
-        int[] idProdutos = new int[100];
-        double[] precoProdutos = new double[100];
-        
-        int[] idCarrinho = new int[100]; 
-        int[] qtdeCarrinho = new int[100];
-        
-        int opcaoMenu = 0;
-        String opcao = "";
-        
-        int indice = 0, indiceCarrinho = 0;
         
         do {
             clearConsole();
@@ -33,24 +35,7 @@ public class AC2 {
             
             switch (opcaoMenu) {
                 case 1:// ==================================================================================
-                // 1- Cadastrar Produto (ate 100 itens)
-                //  cadastrar produto: id (automatico), nome e preco
-                    System.out.println("""
-                                       
-                                       ==================================================
-                                       ## CADASTRAR PRODUTO ##
-                                       """);
-                    do {
-                        idProdutos[indice] = indice;
-                        System.out.print("Nome: ");
-                        nomeProdutos[indice] = scan.next();
-                        System.out.print("Preco: ");
-                        precoProdutos[indice] = scan.nextDouble();
-                    
-                        System.out.println("Cadastrar outro Porduto (S/N)");
-                        opcao = scan.next();
-                        indice++;
-                    } while(opcao.toUpperCase().equals("S"));
+                    cadastrar();
                     break;
                 case 2:// ==================================================================================
                     // 2- Comprar (ate 100 itens)
@@ -128,5 +113,26 @@ public class AC2 {
         for (int i = 0; i < 50; i++) {
             System.out.println();
         }
+    }
+    
+    public static void cadastrar() {
+        // 1- Cadastrar Produto (ate 100 itens)
+                //  cadastrar produto: id (automatico), nome e preco
+                    System.out.println("""
+                                       
+                                       ==================================================
+                                       ## CADASTRAR PRODUTO ##
+                                       """);
+                    do {
+                        idProdutos[indice] = indice;
+                        System.out.print("Nome: ");
+                        nomeProdutos[indice] = scan.next();
+                        System.out.print("Preco: ");
+                        precoProdutos[indice] = scan.nextDouble();
+                    
+                        System.out.println("Cadastrar outro Porduto (S/N)");
+                        opcao = scan.next();
+                        indice++;
+                    } while(opcao.toUpperCase().equals("S"));
     }
 }

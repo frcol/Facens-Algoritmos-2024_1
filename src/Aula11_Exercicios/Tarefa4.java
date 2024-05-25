@@ -10,6 +10,7 @@ valor. No final, exiba as duas matrizes na tela
 public class Tarefa4 {
     public static void main(String[] args) {
         Random random = new Random();
+        
         int[][] matriz = new int[3][3];
         int[][] matrizDobro = new int[3][3];
 

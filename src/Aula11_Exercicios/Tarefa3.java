@@ -10,6 +10,7 @@ posição
 public class Tarefa3 {
     public static void main(String[] args) {
         Random random = new Random();
+        
         int[][] matriz = new int[5][3];
         int maxNum = Integer.MIN_VALUE;
         
